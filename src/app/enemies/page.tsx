@@ -9,7 +9,7 @@ import { EnemyArray } from "@/types/types";
 
 const Page = () => {
 
-    <Suspense>
+   
     const data:EnemyArray = [
         {
         name:"Alien Scum",
@@ -30,7 +30,7 @@ const Page = () => {
         }
        
         ] 
-        </Suspense>
+      
 
     const searchParams = useSearchParams();
     const query = searchParams.get('id');
