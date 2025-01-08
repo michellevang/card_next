@@ -2,13 +2,14 @@
 import card from "../page.module.scss";
 import Image from "next/image";
 import gsap from "gsap";
-import { useEffect, useRef } from "react";
+import { Suspense, useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import { EnemyArray } from "@/types/types";
 
 
 const Page = () => {
 
+    <Suspense>
     const data:EnemyArray = [
         {
         name:"Alien Scum",
@@ -29,6 +30,7 @@ const Page = () => {
         }
        
         ] 
+        </Suspense>
 
     const searchParams = useSearchParams();
     const query = searchParams.get('id');
