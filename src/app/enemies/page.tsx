@@ -2,7 +2,7 @@
 import card from "../page.module.scss";
 import Image from "next/image";
 import gsap from "gsap";
-import { Suspense, useEffect, useRef } from "react";
+import {  useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import { EnemyArray } from "@/types/types";
 
